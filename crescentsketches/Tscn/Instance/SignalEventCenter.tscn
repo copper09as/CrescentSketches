@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://6hb2yxywe7oy"]
+
+[ext_resource type="Script" uid="uid://daj8oxkqr2ihj" path="res://Script/Manager/SignalEventCenter.cs" id="1_au0d2"]
+
+[node name="SignaleEventCenter" type="Node"]
+script = ExtResource("1_au0d2")
