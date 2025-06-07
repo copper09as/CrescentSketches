@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://diqg2p2dpnak"]
+
+[ext_resource type="Script" uid="uid://hqfxnqrbqrpr" path="res://Tscn/Ui/PlayerUi.cs" id="1_xuh6s"]
+[ext_resource type="FontFile" uid="uid://dk1xg0iy3hqyv" path="res://Font/霞鹜文楷/LXGWWenKai-Medium.ttf" id="2_a5l0c"]
+
+[node name="PlayerUi" type="Node" node_paths=PackedStringArray("_displayLabel", "TextContainer", "ToggleButton")]
+script = ExtResource("1_xuh6s")
+_displayLabel = NodePath("PlayerUi/Label")
+TextContainer = NodePath("PlayerUi")
+ToggleButton = NodePath("Button")
+
+[node name="Button" type="Button" parent="."]
+z_index = 3
+offset_left = 255.0
+offset_top = 65.0
+offset_right = 359.0
+offset_bottom = 96.0
+theme_override_fonts/font = ExtResource("2_a5l0c")
+text = "查看角色信息"
+
+[node name="PlayerUi" type="Control" parent="."]
+z_index = 4
+layout_mode = 3
+anchors_preset = 0
+offset_top = 111.0
+offset_right = 56.0
+offset_bottom = 208.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="PlayerUi"]
+z_index = 4
+layout_mode = 0
+offset_left = 3.0
+offset_top = -12.0
+offset_right = 286.0
+offset_bottom = 472.0
+theme_override_fonts/font = ExtResource("2_a5l0c")
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="Panel" type="Panel" parent="PlayerUi"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -12.0
+offset_right = 284.0
+offset_bottom = 472.0
+mouse_filter = 2

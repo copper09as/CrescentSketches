@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8rmulgd2ly10"]
+
+[ext_resource type="Texture2D" uid="uid://4b3qm1p30el4" path="res://Art/Default/button_round_border.png" id="1_dkbd8"]
+[ext_resource type="Script" uid="uid://b63glheunqexy" path="res://Script/Ui/EventPoint.cs" id="1_h4gsr"]
+[ext_resource type="Texture2D" uid="uid://dh8leq7fsiapd" path="res://Art/Default/button_round_depth_line.png" id="2_iqlgl"]
+[ext_resource type="FontFile" uid="uid://dk1xg0iy3hqyv" path="res://Font/霞鹜文楷/LXGWWenKai-Medium.ttf" id="4_dkbd8"]
+
+[node name="EventPoint" type="TextureButton" node_paths=PackedStringArray("label")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -296.0
+offset_bottom = -736.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+texture_normal = ExtResource("1_dkbd8")
+texture_pressed = ExtResource("2_iqlgl")
+script = ExtResource("1_h4gsr")
+label = NodePath("Label")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0606
+offset_top = 23.4848
+offset_right = 61.0606
+offset_bottom = 66.4848
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_dkbd8")
+theme_override_font_sizes/font_size = 10
+text = "芭拉芭拉芭"
+horizontal_alignment = 1
+autowrap_mode = 3

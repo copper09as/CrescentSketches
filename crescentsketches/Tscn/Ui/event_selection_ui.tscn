@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bependcoqki5q"]
+
+[ext_resource type="Script" uid="uid://bh0gpveebfjnm" path="res://Script/Ui/EventSelectionUi.cs" id="1_6vsy0"]
+[ext_resource type="PackedScene" uid="uid://c8rmulgd2ly10" path="res://Tscn/Ui/event_point.tscn" id="2_uv2nw"]
+
+[node name="EventSelectionUi" type="Control" node_paths=PackedStringArray("points")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6vsy0")
+points = [NodePath("VBoxContainer/EventPoint"), NodePath("VBoxContainer/EventPoint2"), NodePath("VBoxContainer/EventPoint3")]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 136.0
+offset_right = 142.0
+offset_bottom = 428.0
+scale = Vector2(2.8, 2.8)
+theme_override_constants/separation = 20
+
+[node name="EventPoint3" parent="VBoxContainer" instance=ExtResource("2_uv2nw")]
+layout_mode = 2
+stretch_mode = 0
+
+[node name="EventPoint2" parent="VBoxContainer" instance=ExtResource("2_uv2nw")]
+layout_mode = 2
+
+[node name="EventPoint" parent="VBoxContainer" instance=ExtResource("2_uv2nw")]
+layout_mode = 2

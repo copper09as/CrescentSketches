@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 public partial class SceneChangeManager : Node
 {
@@ -15,6 +16,7 @@ public partial class SceneChangeManager : Node
         {
             QueueFree();
         }
+        
     }
     public void ChangeScene(string path)
     {

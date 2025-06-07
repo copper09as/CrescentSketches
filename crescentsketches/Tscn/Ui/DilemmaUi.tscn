@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbrmauc5yw71a"]
+
+[ext_resource type="Script" uid="uid://bscg8yl5bo6r4" path="res://Script/Ui/DilemmaUI.cs" id="1_8csom"]
+[ext_resource type="FontFile" uid="uid://dk1xg0iy3hqyv" path="res://Font/霞鹜文楷/LXGWWenKai-Medium.ttf" id="2_2pp03"]
+
+[node name="DilemmaUI" type="Control" node_paths=PackedStringArray("option1", "option2")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8csom")
+option1 = NodePath("OptionBtn1")
+option2 = NodePath("OptionBtn2")
+
+[node name="OptionBtn1" type="Button" parent="."]
+layout_mode = 0
+offset_top = 420.0
+offset_right = 360.0
+offset_bottom = 527.0
+theme_override_fonts/font = ExtResource("2_2pp03")
+theme_override_font_sizes/font_size = 22
+text = "这就是我"
+autowrap_mode = 3
+
+[node name="OptionBtn2" type="Button" parent="."]
+layout_mode = 0
+offset_top = 594.0
+offset_right = 360.0
+offset_bottom = 701.0
+theme_override_fonts/font = ExtResource("2_2pp03")
+theme_override_font_sizes/font_size = 22
+text = "这就是"
+autowrap_mode = 3

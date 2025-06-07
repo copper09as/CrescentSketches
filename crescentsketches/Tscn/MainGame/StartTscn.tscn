@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://dti30anh83msg"]
 
-[ext_resource type="Script" uid="uid://c4aqstb8w1dph" path="res://Tscn/MainGame/StartTscn.cs" id="1_tda1y"]
+[ext_resource type="Script" uid="uid://cx5vips8acqvh" path="res://Script/Ui/StartTscn.cs" id="1_tda1y"]
 
-[node name="StartTscn" type="Control"]
+[node name="StartTscn" type="Control" node_paths=PackedStringArray("StartGameBtn", "QuitBtn")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,3 +10,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tda1y")
+StartGameBtn = NodePath("StartGameBtn")
+QuitBtn = NodePath("QuitBtn")
+
+[node name="StartGameBtn" type="Button" parent="."]
+layout_mode = 0
+offset_top = 217.0
+offset_right = 360.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "开始游戏"
+
+[node name="QuitBtn" type="Button" parent="."]
+layout_mode = 0
+offset_top = 516.0
+offset_right = 360.0
+offset_bottom = 659.0
+theme_override_font_sizes/font_size = 30
+text = "退出游戏"

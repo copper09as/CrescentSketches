@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CrescentSketches"
-run/main_scene="uid://6hb2yxywe7oy"
+run/main_scene="uid://dti30anh83msg"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -31,3 +31,8 @@ window/handheld/orientation=1
 [dotnet]
 
 project/assembly_name="CrescentSketches"
+
+[rendering]
+
+textures/canvas_textures/default_texture_repeat=1
+textures/vram_compression/import_etc2_astc=true

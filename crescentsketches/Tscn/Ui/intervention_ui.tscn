@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj3say83byx4t"]
+
+[ext_resource type="Script" uid="uid://cta875iqqgkqk" path="res://Script/Ui/InterventionUi.cs" id="1_3ehmj"]
+[ext_resource type="FontFile" uid="uid://dk1xg0iy3hqyv" path="res://Font/霞鹜文楷/LXGWWenKai-Medium.ttf" id="2_g7432"]
+
+[node name="InterventionUi" type="Control" node_paths=PackedStringArray("option1", "option2", "option3")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3ehmj")
+option1 = NodePath("OptionBtn1")
+option2 = NodePath("OptionBtn2")
+option3 = NodePath("OptionBtn3")
+
+[node name="OptionBtn1" type="Button" parent="."]
+layout_mode = 0
+offset_top = 352.0
+offset_right = 360.0
+offset_bottom = 459.0
+theme_override_fonts/font = ExtResource("2_g7432")
+theme_override_font_sizes/font_size = 22
+text = "这就是"
+autowrap_mode = 3
+
+[node name="OptionBtn2" type="Button" parent="."]
+layout_mode = 0
+offset_top = 459.0
+offset_right = 360.0
+offset_bottom = 566.0
+theme_override_fonts/font = ExtResource("2_g7432")
+theme_override_font_sizes/font_size = 22
+text = "这就是"
+autowrap_mode = 3
+
+[node name="OptionBtn3" type="Button" parent="."]
+layout_mode = 0
+offset_top = 566.0
+offset_right = 360.0
+offset_bottom = 673.0
+theme_override_fonts/font = ExtResource("2_g7432")
+theme_override_font_sizes/font_size = 22
+text = "这就是"
+autowrap_mode = 3

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7ihqlfxpwpds"]
+
+[ext_resource type="Script" uid="uid://bmih24xcui5p6" path="res://Script/Manager/EnergyManager.cs" id="1_elgse"]
+
+[node name="EnergyManager" type="Node"]
+script = ExtResource("1_elgse")

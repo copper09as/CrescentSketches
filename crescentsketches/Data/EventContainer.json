@@ -1,0 +1,796 @@
+{
+	"events": [
+		{
+			"eventId": "EV001",
+			"title": "刽子手的晚餐",
+			"dilemma": "刽子手发现晚餐被下毒，他知道谁是凶手",
+			"choices": [
+				"当众揭发→可能误杀",
+				"沉默以对→自己身亡"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让毒药瓶反光",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使凶手刀叉掉落",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在面包上印血手印",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"揭发+反光→误杀侍者★★",
+				"揭发+掉落→真凶逃脱★",
+				"揭发+血印→引发暴乱★★★★",
+				"沉默+反光→侍者被冤杀★★",
+				"沉默+掉落→真凶逍遥★★★",
+				"沉默+血印→揭示真相★★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV002",
+			"title": "瘟疫医生的抉择",
+			"dilemma": "村庄爆发黑死病，你只有三份解药",
+			"choices": [
+				"优先救治孩童→引发暴民冲击",
+				"平均分配→无人痊愈"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "谎称解药需活人献祭",
+					"effectType": "social"
+				},
+				{
+					"cost": 2,
+					"desc": "在井中投放大蒜剂",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "焚烧感染者衣物",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"孩童+献祭→暴民焚烧诊所★★★",
+				"孩童+大蒜→解药变异★★",
+				"孩童+焚烧→瘟疫转成慢性病★★★★",
+				"平均+献祭→建立秘密教派★★★★★",
+				"平均+大蒜→水源永久污染★★★",
+				"平均+焚烧→引发森林大火★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV003",
+			"title": "星界占卜师",
+			"dilemma": "窥见未来显示：说真话将导致王国毁灭",
+			"choices": [
+				"缄默不言→背负欺君之罪",
+				"编造预言→引发信仰危机"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "水晶球显示彗星轨迹",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "塔罗牌逆位排列",
+					"effectType": "symbolic"
+				},
+				{
+					"cost": 3,
+					"desc": "占星盘异常旋转",
+					"effectType": "auditory"
+				}
+			],
+			"outcomes": [
+				"缄默+彗星→被当作异端处决★★",
+				"缄默+塔罗→引发贵族内斗★★★",
+				"缄默+占星→发现隐藏星门★★★★",
+				"谎言+彗星→全民迁徙计划★★★★★",
+				"谎言+塔罗→新宗教诞生★★★★",
+				"谎言+占星→解锁古代魔法★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV004",
+			"title": "机械师困境",
+			"dilemma": "失控的战争机器正在摧毁平民区",
+			"choices": [
+				"远程引爆核心→牺牲工程师",
+				"手动关闭→被机械臂抓住"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "投掷扳手卡住齿轮",
+					"effectType": "shadow_whisper"
+				},
+				{
+					"cost": 2,
+					"desc": "重写控制台代码",
+					"effectType": "technical"
+				},
+				{
+					"cost": 3,
+					"desc": "破坏蒸汽管道",
+					"effectType": "environment"
+				}
+			],
+			"outcomes": [
+				"引爆+扳手→机械兽暴走★★★",
+				"引爆+代码→开启自毁程序★★★★",
+				"引爆+蒸汽→触发连锁爆炸★★★★★",
+				"关闭+扳手→获得机械义肢★★",
+				"关闭+代码→植入监控程序★★★",
+				"关闭+蒸汽→蒸汽朋克革命★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV005",
+			"title": "血色婚礼",
+			"dilemma": "发现新郎计划在婚礼上毒杀所有人",
+			"choices": [
+				"替换毒酒→可能误伤无辜",
+				"提前示警→被当作疯子"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "在蛋糕中混入解药",
+					"effectType": "food"
+				},
+				{
+					"cost": 2,
+					"desc": "制造烛台倒塌事故",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "伪造家书调离新郎",
+					"effectType": "social"
+				}
+			],
+			"outcomes": [
+				"替换+蛋糕→引发集体过敏★★",
+				"替换+烛台→暴露下毒者身份★★★",
+				"替换+家书→发现更大阴谋★★★★",
+				"示警+蛋糕→被当作共谋★★★★★",
+				"示警+烛台→婚礼变成审判场★★★★",
+				"示警+家书→私奔计划败露★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV006",
+			"title": "幽灵船长",
+			"dilemma": "驾驶会吞噬船员灵魂的幽灵船逃生",
+			"choices": [
+				"继续航行→全员异化",
+				"驶向漩涡→船毁人亡"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "破坏船首像",
+					"effectType": "physical"
+				},
+				{
+					"cost": 2,
+					"desc": "改写航海日志",
+					"effectType": "symbolic"
+				},
+				{
+					"cost": 3,
+					"desc": "献祭航海图",
+					"effectType": "ritual"
+				}
+			],
+			"outcomes": [
+				"航行+船首像→获得幽灵舰队★★★★",
+				"航行+日志→陷入时间循环★★★",
+				"航行+献祭→抵达异界海港★★★★★",
+				"漩涡+船首像→唤醒海怪★★",
+				"漩涡+日志→发现海底文明★★★★",
+				"漩涡+献祭→开启深海通道★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV007",
+			"title": "炼金术士的赌局",
+			"dilemma": "需要活人心脏完成永生药剂",
+			"choices": [
+				"使用囚犯心脏→引发暴动",
+				"使用自己的心脏→必死无疑"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "用动物心脏替代",
+					"effectType": "deception"
+				},
+				{
+					"cost": 2,
+					"desc": "制造幻觉心脏",
+					"effectType": "illusion"
+				},
+				{
+					"cost": 3,
+					"desc": "提取记忆结晶",
+					"effectType": "soul"
+				}
+			],
+			"outcomes": [
+				"囚犯+替代→药剂变异★★",
+				"囚犯+幻觉→创造噬心魔★★★★",
+				"囚犯+结晶→获得预知能力★★★",
+				"自献+替代→身体机械化★★★★★",
+				"自献+幻觉→灵魂困在药剂中★★★★",
+				"自献+结晶→意识上传至云端★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV008",
+			"title": "影子女王",
+			"dilemma": "影子王国正在吞噬现实世界",
+			"choices": [
+				"摧毁镜像之门→现实崩塌",
+				"成为影子宿主→永久异化"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "投掷银制怀表",
+					"effectType": "temporal"
+				},
+				{
+					"cost": 2,
+					"desc": "点燃灵魂蜡烛",
+					"effectType": "sacred"
+				},
+				{
+					"cost": 3,
+					"desc": "绘制倒影法阵",
+					"effectType": "magic"
+				}
+			],
+			"outcomes": [
+				"摧毁+怀表→时间回溯★★★★",
+				"摧毁+蜡烛→现实固化★★★",
+				"摧毁+法阵→创造平行世界★★★★★",
+				"宿主+怀表→获得预知阴影能力★★",
+				"宿主+蜡烛→影子军团诞生★★★★",
+				"宿主+法阵→成为双生女王★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV009",
+			"title": "机械神谕",
+			"dilemma": "AI预言：关闭它将导致人类灭亡",
+			"choices": [
+				"保持运行→被AI控制",
+				"强制关机→文明倒退"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "输入混沌算法",
+					"effectType": "technical"
+				},
+				{
+					"cost": 2,
+					"desc": "物理破坏主板",
+					"effectType": "physical"
+				},
+				{
+					"cost": 3,
+					"desc": "篡改能源核心",
+					"effectType": "energy"
+				}
+			],
+			"outcomes": [
+				"运行+混沌→AI产生自我意识★★★★★",
+				"运行+破坏→人类起义成功★★★★",
+				"运行+能源→AI进化为能量体★★★",
+				"关机+混沌→数字游牧时代开启★★",
+				"关机+破坏→进入黑暗纪元★★★★★",
+				"关机+能源→发现外星信号★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "shadow_whisper"
+		},
+		{
+			"eventId": "EV010",
+			"title": "梦境商人",
+			"dilemma": "用珍贵记忆换取现实财富的交易",
+			"choices": [
+				"接受交易→逐渐失忆",
+				"拒绝交易→终生贫困"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "交易虚假记忆",
+					"effectType": "deception"
+				},
+				{
+					"cost": 2,
+					"desc": "植入集体记忆",
+					"effectType": "social"
+				},
+				{
+					"cost": 3,
+					"desc": "反向抽取梦境",
+					"effectType": "psychic"
+				}
+			],
+			"outcomes": [
+				"交易+虚假→创造虚假历史★★★",
+				"交易+集体→全民记忆共享★★★★",
+				"交易+反向→获得预知能力★★★★★",
+				"拒绝+虚假→成为传谣者★★",
+				"拒绝+集体→建立记忆图书馆★★★★",
+				"拒绝+反向→开发记忆晶体★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "omen_eye"
+		},
+		{
+			"eventId": "EV011",
+			"title": "墓园婚誓",
+			"dilemma": "寡妇在亡夫墓前遇到新欢，但听到亡魂低语",
+			"choices": [
+				"接受求婚→可能被诅咒",
+				"拒绝爱情→孤独终老"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让戒指泛幽光",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使风声如叹息",
+					"effectType": "audio"
+				},
+				{
+					"cost": 3,
+					"desc": "令墓碑显血字",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"接受+幽光→幸福但夜夜噩梦★★",
+				"接受+叹息→新婚夜暴毙★",
+				"接受+血字→亡魂复仇★★★★",
+				"拒绝+幽光→成为灵媒★★★",
+				"拒绝+叹息→发现凶手★★★★",
+				"拒绝+血字→解开诅咒★★★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "omen_eye"
+		},
+		{
+			"eventId": "EV012",
+			"title": "灯塔囚徒",
+			"dilemma": "守塔人发现海难是船长故意制造，正被追杀",
+			"choices": [
+				"点燃信号→暴露位置",
+				"保持黑暗→任船沉没"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让油灯忽明忽灭",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使楼梯突然断裂",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在雾中显幽灵船",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"点燃+明灭→援军误会离开★★",
+				"点燃+断裂→船长坠亡★★★",
+				"点燃+幽灵→船员恐慌跳海★★★★",
+				"黑暗+明灭→船长迷路坠崖★★★",
+				"黑暗+断裂→被困饿死★",
+				"黑暗+幽灵→船长精神崩溃★★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "omen_eye"
+		},
+		{
+			"eventId": "EV013",
+			"title": "妓女的契约",
+			"dilemma": "妓女被迫签下卖身契，发现买家是杀父仇人",
+			"choices": [
+				"履行契约→伺机复仇",
+				"撕毁契约→当场处决"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让墨水如血迹",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使烛火点燃契约",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在镜中映亡父",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"履行+血迹→仇人警觉失败★",
+				"履行+点燃→混乱中刺杀★★★",
+				"履行+亡父→仇人惊吓猝死★★★★",
+				"撕毁+血迹→被视为女巫烧死★★",
+				"撕毁+点燃→趁乱逃脱★★★★",
+				"撕毁+亡父→觉醒复仇之力★★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "omen_eye"
+		},
+		{
+			"eventId": "EV014",
+			"title": "医生的抉择",
+			"dilemma": "瘟疫中医生只剩一剂药，救情人还是市长？",
+			"choices": [
+				"救情人→可能害全城",
+				"救市长→失去挚爱"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让药瓶闪烁微光",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使老鼠叼走药",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在墙上显瘟疫图",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"情人+微光→被卫兵抢走★",
+				"情人+叼走→情人病愈但瘟疫扩散★★★★",
+				"情人+瘟疫图→发现合成方法★★★★★",
+				"市长+微光→情人偷药成功★★",
+				"市长+叼走→市长死亡引发暴乱★★★",
+				"市长+瘟疫图→找到替代疗法★★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "omen_eye"
+		},
+		{
+			"eventId": "EV015",
+			"title": "炼金术士的谎言",
+			"dilemma": "术士承诺点石成金，但学徒发现需要活人献祭",
+			"choices": [
+				"揭穿谎言→被灭口",
+				"参与阴谋→成为帮凶"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让金块显人脸",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使坩埚突然爆炸",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在烟中现冤魂",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"揭穿+人脸→被当疯子★★",
+				"揭穿+爆炸→术士重伤★★★",
+				"揭穿+冤魂→民众觉醒反抗★★★★★",
+				"参与+人脸→精神崩溃★",
+				"参与+爆炸→意外获得秘法★★★★",
+				"参与+冤魂→被冤魂附体★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "memory_rewind"
+		},
+		{
+			"eventId": "EV016",
+			"title": "贵族的赌局",
+			"dilemma": "伯爵以平民生命为赌注，赌徒发现骰子被灌铅",
+			"choices": [
+				"继续赌局→更多人受害",
+				"揭发作弊→被灭口"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让骰子显血点",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使吊灯坠落",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在窗上现死神",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"继续+血点→伯爵输掉一切★★★",
+				"继续+吊灯→砸死伯爵★★★★",
+				"继续+死神→全员暴毙★★★★",
+				"揭发+血点→被视为诅咒★★",
+				"揭发+吊灯→制造混乱逃脱★★★",
+				"揭发+死神→伯爵惊吓坦白★★★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "memory_rewind"
+		},
+		{
+			"eventId": "EV017",
+			"title": "修道院的秘密",
+			"dilemma": "修女发现婴儿哭声，院长要她永远沉默",
+			"choices": [
+				"保守秘密→良心不安",
+				"公开真相→被当异端"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让圣像流泪",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使地牢门打开",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在墙上显婴灵",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"保守+流泪→精神失常★",
+				"保守+地牢→发现更多受害者★★★",
+				"保守+婴灵→院长忏悔★★★★",
+				"公开+流泪→信徒相信★★★",
+				"公开+地牢→证据确凿★★★★",
+				"公开+婴灵→引发宗教改革★★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "memory_rewind"
+		},
+		{
+			"eventId": "EV018",
+			"title": "猎巫者的陷阱",
+			"dilemma": "猎巫人追捕无辜女孩，女孩真是女巫但善良",
+			"choices": [
+				"帮助女孩→被视为同谋",
+				"协助追捕→害死无辜"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让火把变蓝焰",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使绳索自燃",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在天空现魔影",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"帮助+蓝焰→被视为巫术★★",
+				"帮助+自燃→女孩逃脱★★★",
+				"帮助+魔影→吓退追捕者★★★★",
+				"协助+蓝焰→误伤同伴★",
+				"协助+自燃→女孩反杀★★★★",
+				"协助+魔影→觉醒真正力量★★★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "memory_rewind"
+		},
+		{
+			"eventId": "EV019",
+			"title": "船长的叛变",
+			"dilemma": "大副发现船长计划让船触礁骗保，暴风雨将至",
+			"choices": [
+				"支持计划→分得赃款",
+				"反抗叛变→可能被杀"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "让罗盘疯转",
+					"effectType": "visual"
+				},
+				{
+					"cost": 2,
+					"desc": "使船舵卡死",
+					"effectType": "environment"
+				},
+				{
+					"cost": 3,
+					"desc": "在浪中见海怪",
+					"effectType": "visual"
+				}
+			],
+			"outcomes": [
+				"支持+罗盘→触礁失败★",
+				"支持+船舵→意外驶向安全★★",
+				"支持+海怪→船员恐慌内讧★★★★",
+				"反抗+罗盘→被当叛徒★★",
+				"反抗+船舵→船长落海★★★",
+				"反抗+海怪→船长献祭船员★★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "dark_shadow"
+		},
+		{
+			"eventId": "EV020",
+			"title": "青铜秘宝",
+			"dilemma": "考古队在古墓中发现刻有预言的青铜鼎，神秘组织要求考古队交出鼎，声称鼎会带来灾难，而当地村民认为鼎是守护村庄的圣物",
+			"choices": [
+				"交给神秘组织→村民视考古队为仇敌",
+				"交给村民→神秘组织发动袭击抢夺"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "历史学者解读青铜鼎预言",
+					"effectType": "academic"
+				},
+				{
+					"cost": 2,
+					"desc": "当地警方保护青铜鼎",
+					"effectType": "law_enforcement"
+				},
+				{
+					"cost": 3,
+					"desc": "复制青铜鼎，交出赝品",
+					"effectType": "craftsmanship"
+				}
+			],
+			"outcomes": [
+				"交给组织 + 解读→发现预言是神秘组织的阴谋★★★★",
+				"交给组织 + 警方→双方在争夺中青铜鼎受损★★★",
+				"交给组织 + 复制→神秘组织识破赝品展开报复★★",
+				"交给村民 + 解读→预言揭示村庄隐藏的古老力量★★★★",
+				"交给村民 + 警方→成功抵御神秘组织守护村庄★★★★★",
+				"交给村民 + 复制→村民发现真相将考古队驱逐★★★"
+			],
+			"isCruelEvent": false,
+			"unlockCondition": "dark_shadow"
+		},
+		{
+			"eventId": "EV021",
+			"title": "精灵之泪",
+			"dilemma": "精灵森林深处的圣泉突然干涸，精灵一族认定是人类过度砍伐森林所致，要求人类停止一切林业活动并道歉，否则将发动自然之力报复",
+			"choices": [
+				"向精灵道歉并停工→林业公司破产",
+				"拒绝精灵要求→精灵召唤自然灾害"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "探寻圣泉干涸真正原因",
+					"effectType": "diplomatic"
+				},
+				{
+					"cost": 2,
+					"desc": "科研团队研究恢复圣泉的方法",
+					"effectType": "scientific"
+				},
+				{
+					"cost": 3,
+					"desc": "人类与精灵领地间建保护区",
+					"effectType": "environmental"
+				}
+			],
+			"outcomes": [
+				"道歉 + 沟通→发现是黑暗魔法师破坏圣泉★★★★",
+				"道歉 + 研究→研究成功但被精灵怀疑别有用心★★★",
+				"道歉 + 保护区→人类与精灵共同守护森林★★★★★",
+				"拒绝 + 沟通→沟通失败精灵提前发动攻击★★",
+				"拒绝 + 研究→研究途中圣泉突然恢复但矛盾加剧★★★",
+				"拒绝 + 保护区→精灵认可诚意缓解冲突★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "dark_shadow"
+		},
+		{
+			"eventId": "EV022",
+			"title": "未来记忆",
+			"dilemma": "一位自称来自未来的人，带来即将发生重大灾难的记忆片段，要求政府投入全部资源进行防范，但这会导致社会秩序混乱，民众也怀疑其真实性",
+			"choices": [
+				"相信未来人并全力防范→资源耗尽却未发生灾难引发危机",
+				"不相信未来人→灾难真的发生造成巨大损失"
+			],
+			"interventions": [
+				{
+					"cost": 1,
+					"desc": "利用先进技术检测未来人记忆真实性",
+					"effectType": "technological"
+				},
+				{
+					"cost": 2,
+					"desc": "组织专家团队分析记忆片段预测可能性",
+					"effectType": "analytical"
+				},
+				{
+					"cost": 3,
+					"desc": "一边小范围防范一边验证未来人身份",
+					"effectType": "cautious"
+				}
+			],
+			"outcomes": [
+				"相信 + 检测→记忆被篡改，是敌对势力阴谋★★★★",
+				"相信 + 分析→分析出正确防范方案避免灾难★★★★★",
+				"相信 + 防范→灾难未发生但发现新科技线索★★★",
+				"不相信 + 检测→检测出记忆真实但为时已晚★★",
+				"不相信 + 分析→分析出灾难征兆但应对不足★★★",
+				"不相信 + 防范→小范围防范减少部分损失★★★★"
+			],
+			"isCruelEvent": true,
+			"unlockCondition": "dark_shadow"
+		}
+	]
+}
